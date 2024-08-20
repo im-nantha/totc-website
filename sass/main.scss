@@ -1,0 +1,23 @@
+/* Import partials */
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins.scss";
+@import "base/functions";
+@import "base/fonts";
+@import "layout/header";
+@import "layout/footer";
+@import "base/flexbox";
+@import "base/utilities";
+/* Components*/
+@import "components/banner";
+@import "components/text-component";
+@import "components/othercomponents";
+
+//mixins
+
+@mixin green-gradiant {
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

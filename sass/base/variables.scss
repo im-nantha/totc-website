@@ -1,0 +1,113 @@
+// _variables.scss
+
+// Define Sass variables
+$primary-green: #49bbbd;
+$primary-light-green: #80cfd0;
+$pure-white: #ffffff;
+$pure-black: #000000;
+$primary-red: #ee4c42;
+$heading-black: #010514;
+$heading-green: #00cbb8;
+$heading-blue: #2f327d;
+$color-violet: #5b72ee;
+$color-skyblue: #29b9e7;
+$lighten-green: #33efa0;
+$lighten-blue: #ebf5ff;
+$darken-blue: #252641;
+$popins-font: "Poppins", sans-serif;
+
+// Define CSS custom properties
+:root {
+  --primary-green: #{$primary-green};
+  --primary-light-green: #{$primary-light-green};
+  --primary-red: #{$primary-red};
+  --pure-white: #{$pure-white};
+  --pure-black: #{$pure-black};
+  --heading-black: #{$heading-black};
+  --heading-green: #{$heading-green};
+  --heading-blue: #{$heading-blue};
+  --color-violet: #{$color-violet};
+  --color-skyblue: #{$color-skyblue};
+  --lighten-green: #{$lighten-green};
+  --lighten-blue: #{$lighten-blue};
+  --darken-blue: #{$darken-blue};
+  --popins-font: #{$popins-font};
+}
+
+//text align
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+//image 
+
+.img-fluid{
+  width:100%;
+  height:100%;
+}
+
+.mw-100{
+  max-width: 100% !important;
+}
+
+//fonts
+.primary-green {
+  color: var(--primary-green);
+}
+
+.primary-light-green {
+  color: var(--primary-light-green);
+}
+
+.primary-red {
+  color: var(--primary-red);
+}
+
+.pure-white {
+  color: var(--pure-white);
+}
+
+.pure-black {
+  color: var(--pure-black);
+}
+
+.heading-black {
+  color: var(--heading-black);
+}
+
+.heading-green {
+  color: var(--heading-green);
+}
+
+.heading-blue {
+  color: var(--heading-blue);
+}
+
+.color-violet {
+  color: var(--color-violet);
+}
+
+.color-skyblue {
+  color: var(--color-skyblue);
+}
+
+.lighten-green {
+  color: var(--lighten-green);
+}
+
+.lighten-blue {
+  color: var(--lighten-blue);
+}
+
+.darken-blue {
+  color: var(--darken-blue);
+}

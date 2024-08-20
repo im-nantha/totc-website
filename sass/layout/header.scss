@@ -1,0 +1,34 @@
+.header {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 1rem 0rem;
+
+  .totc-logo-wrapper {
+    width: 114px;
+    height: 83px;
+    .totc-logo-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .totc-nav-list {
+    list-style-type: none;
+    gap: 2rem;
+  }
+  .totc-nav-buttons{
+    gap: 1rem;
+    .btn-login, .btn-signup{
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .btn-login{
+      background-color: var(--pure-white);
+      color: var(--pure-black);
+    }
+    .btn-signup{
+      background-color: var(--primary-light-green);
+      color: var(--pure-white);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// utilities
+
+$spacings: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+
+@mixin generate-spacing-classes($property, $propertyname, $map, $breakpoints) {
+  @each $key, $value in $map {
+    .#{$property}-#{$key} {
+      #{$propertyname}: #{$value} !important;
+    }
+    .#{$property}t-#{$key} {
+      #{$propertyname}-top: #{$value} !important;
+    }
+    .#{$property}r-#{$key} {
+      #{$propertyname}-right: #{$value} !important;
+    }
+    .#{$property}b-#{$key} {
+      #{$propertyname}-bottom: #{$value} !important;
+    }
+    .#{$property}l-#{$key} {
+      #{$propertyname}-left: #{$value} !important;
+    }
+    .#{$property}x-#{$key} {
+      #{$propertyname}-left: #{$value} !important;
+      #{$propertyname}-right: #{$value} !important;
+    }
+    .#{$property}y-#{$key} {
+      #{$propertyname}-top: #{$value} !important;
+      #{$propertyname}-bottom: #{$value} !important;
+    }
+
+    @each $breakpoint, $breakpoint-value in $breakpoints {
+      @media (min-width: #{$breakpoint-value}) {
+        .#{$property}-#{$breakpoint}-#{$key} {
+          #{$propertyname}: #{$value} !important;
+        }
+        .#{$property}t-#{$breakpoint}-#{$key} {
+          #{$propertyname}-top: #{$value} !important;
+        }
+        .#{$property}r-#{$breakpoint}-#{$key} {
+          #{$propertyname}-right: #{$value} !important;
+        }
+        .#{$property}b-#{$breakpoint}-#{$key} {
+          #{$propertyname}-bottom: #{$value} !important;
+        }
+        .#{$property}l-#{$breakpoint}-#{$key} {
+          #{$propertyname}-left: #{$value} !important;
+        }
+        .#{$property}x-#{$breakpoint}-#{$key} {
+          #{$propertyname}-left: #{$value} !important;
+          #{$propertyname}-right: #{$value} !important;
+        }
+        .#{$property}y-#{$breakpoint}-#{$key} {
+          #{$propertyname}-top: #{$value} !important;
+          #{$propertyname}-bottom: #{$value} !important;
+        }
+      }
+    }
+  }
+}
+
+@include generate-spacing-classes('m', 'margin' , $spacings, $breakpoints); // Generate margin classes
+@include generate-spacing-classes('p', 'padding' , $spacings, $breakpoints); // Generate padding classes
+

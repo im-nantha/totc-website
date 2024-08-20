@@ -1,0 +1,57 @@
+// SCSS for TOTC Hero Banner
+
+.totc-banner {
+  width: 100%;
+  background-color: var(--primary-green);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: rem(40);
+
+  &__cover {
+    flex: 1;
+    max-width: 50%;
+    .totc-banner-img{
+      object-fit: cover;
+      object-position: top;
+      border-radius: rem(6);
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: rem(40);
+    gap: rem(32);
+
+    .totc-banner-content {
+      flex: 1;
+      max-width: 50%;
+
+      .totc-banner-subtitle {
+        color: var(--pure-white);
+      }
+
+      .totc-banner-button-wrapper {
+        gap: rem(30);
+
+        .btn-join {
+          padding: rem(20) rem(40);
+          border: none;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          background-color: var(--primary-light-green);
+          color: var(--pure-white);
+        }
+
+        .totc-banner__play-icon {
+          max-width: rem(60);
+          max-height: rem(60);
+
+          .play-icon-img {
+            width: rem(60);
+            height: rem(60);
+          }
+        }
+      }
+    }
+  }
+}
