@@ -172,6 +172,10 @@ p {
   list-style-type: none;
   gap: 2rem;
 }
+.header .totc-nav-list .totc-nav-link {
+  text-decoration: none;
+  color: var(--pure-white);
+}
 .header .totc-nav-buttons {
   gap: 1rem;
 }
@@ -189,8 +193,60 @@ p {
   color: var(--pure-white);
 }
 
-footer {
+.totc-layout .totc-layout-row .totc-content-box {
+  padding-top: 1.5625rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer {
+  background-color: var(--darken-blue);
+  color: var(--pure-white);
+}
+.footer .totc-footer {
   padding: 1rem;
+}
+.footer .totc-footer .footer-start {
+  gap: 1.875rem;
+}
+.footer .totc-footer .break-line {
+  width: 1px;
+  height: 60px;
+  border: 1px solid var(--pure-white);
+}
+.footer .totc-footer .footer-form {
+  text-align: center;
+}
+.footer .totc-footer .totc-subscribe-form {
+  padding: 1.25rem 0rem;
+  display: inline-flex;
+  gap: 1.25rem;
+}
+.footer .totc-footer .totc-subscribe-form .totc-subscribe-label {
+  padding: 0.5rem 1.875rem;
+  color: var(--pure-white);
+  border-radius: 1rem;
+  border: 1px solid #83839a;
+  background-color: transparent;
+}
+.footer .totc-footer .totc-subscribe-form .totc-subscribe-btn {
+  padding: 0.5rem 1.875rem;
+  background-color: var(--primary-green);
+  color: var(--pure-white);
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.footer .totc-footer .footer-end {
+  text-align: center;
+}
+.footer .totc-footer .totc-footer-links {
+  list-style: none;
+  gap: 1.25rem;
+}
+.footer .totc-footer .totc-footer-links .footer-nav-links {
+  color: var(--pure-white);
+  text-decoration: none;
 }
 
 .d-flex {
@@ -2233,6 +2289,10 @@ footer {
     padding-bottom: 3rem !important;
   }
 }
+.opacity-6 {
+  opacity: 0.6;
+}
+
 /* Components*/
 .totc-banner {
   width: 100%;
@@ -2252,7 +2312,6 @@ footer {
   border-radius: 0.375rem;
 }
 .totc-banner__wrapper {
-  padding-bottom: 2.5rem;
   gap: 2rem;
 }
 .totc-banner__wrapper .totc-banner-content {
@@ -2365,6 +2424,17 @@ footer {
   height: 16.875rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
+.totc-enroll__box .totc-enroll-btn {
+  position: relative;
+  z-index: 20;
+  margin-top: 1rem;
+  padding: 1.5rem 2.375rem;
+  border-radius: 40px;
+  border: 1px solid var(--pure-white);
+  background-color: transparent;
+  color: var(--pure-white);
+  cursor: pointer;
+}
 
 .totc-layout {
   width: 100%;
@@ -2376,11 +2446,97 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.25rem;
 }
 .totc-layout__container .totc-layout-row .totc-layout-col {
   width: 50%;
+}
+
+.totc-news-container .totc-news-frames:first-child {
+  width: 45%;
+}
+.totc-news-container .totc-news-frames:last-child {
+  width: 50%;
+}
+.totc-news-container .totc-news-frame-wrapper {
+  gap: 1.25rem;
+}
+.totc-news-container .totc-news-frame-wrapper .totc-news-frame-left {
+  position: relative;
+}
+.totc-news-container .totc-news-frame-wrapper .news-color-text-cover {
+  padding: 0.125rem 1.875rem;
+  display: inline-block;
+  background-color: var(--primary-green);
+  color: var(--pure-white);
+  border-radius: 1rem;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+.totc-news-container .totc-news-frame-wrapper .news-color-text-cover.position-static {
+  position: static;
+}
+.totc-news-container .totc-news-frame-wrapper .totc-news-subtitle {
+  opacity: 0.6;
+}
+
+#cards-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.page-cards {
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1.25rem 0rem;
+}
+
+#pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#pagination .page-number {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+#pagination .page-number.active {
+  font-weight: bold;
+  color: var(--primary-green);
+}
+
+#pagination button:hover,
+#pagination .page-number:hover {
+  background-color: #e0e0e0;
+}
+
+.totc-page-cards-container .pagination-img-wrapper {
+  width: 400px;
+}
+.totc-page-cards-container .pagination-img-wrapper .page-books {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

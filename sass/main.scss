@@ -8,10 +8,12 @@
 @import "layout/footer";
 @import "base/flexbox";
 @import "base/utilities";
+@import "base/mainstyle.scss";
 /* Components*/
 @import "components/banner";
 @import "components/text-component";
 @import "components/othercomponents";
+@import "components/pagination.scss";
 
 //mixins
 

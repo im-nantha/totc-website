@@ -14,6 +14,10 @@
   .totc-nav-list {
     list-style-type: none;
     gap: 2rem;
+    .totc-nav-link{
+      text-decoration: none;
+      color: var(--pure-white);
+    }
   }
   .totc-nav-buttons{
     gap: 1rem;
@@ -29,6 +33,16 @@
     .btn-signup{
       background-color: var(--primary-light-green);
       color: var(--pure-white);
+    }
+  }
+}
+
+.totc-layout{
+  .totc-layout-row{
+    .totc-content-box{
+      padding-top: rem(25);
+      display: flex;
+      gap: rem(20);
     }
   }
 }

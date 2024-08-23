@@ -1,0 +1,59 @@
+body {
+}
+
+#cards-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(40);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.page-cards {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pagination {
+    @include center;
+    gap: 10px;
+    padding: rem(20) rem(0);
+}
+
+#pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#pagination .page-number {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+#pagination .page-number.active {
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+#pagination button:hover,
+#pagination .page-number:hover {
+    background-color: #e0e0e0;
+}
+
+.totc-page-cards-container{
+    .pagination-img-wrapper{
+        width: 400px;
+        .page-books{
+            width: 100%;
+        }
+    }
+}

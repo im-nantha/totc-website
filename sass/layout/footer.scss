@@ -1,3 +1,49 @@
-footer{
-    padding: 1rem;
+.footer{
+    background-color: var(--darken-blue);
+        color: var(--pure-white);
+    .totc-footer{
+        padding: 1rem;
+        .footer-start{
+            gap: rem(30);
+        }
+        .break-line{
+            width: 1px;
+            height: 60px;
+            border: 1px solid var(--pure-white);
+        }
+        .footer-form{
+            text-align: center;
+        }
+        .totc-subscribe-form{
+            padding: rem(20) rem(0);
+            display: inline-flex;
+            gap: rem(20);
+            .totc-subscribe-label{
+                padding: rem(8) rem(30);
+                color: var(--pure-white);
+                border-radius: 1rem;
+                border: 1px solid #83839a;
+                background-color: transparent;
+            }
+            .totc-subscribe-btn{
+                padding: rem(8) rem(30);
+                background-color: var(--primary-green);
+                color: var(--pure-white);
+                border-radius: 1rem;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .footer-end{
+            text-align: center;
+        }
+        .totc-footer-links{
+            list-style: none;
+            gap: rem(20);
+            .footer-nav-links{
+                color: var(--pure-white);
+                text-decoration: none;
+            }
+        }
+    }
 }

@@ -2,9 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Totc website</title>
+    <title>Totc E-Learning</title>
+    <meta name="description" content="Totc is one of the famous E-learning website platform for buying and learning coarses online" />
+    <meta name="keywords" content="Totc, totc website, totc e-learn" />
+    <meta property="og:title" content="Totc">
+    <meta property="og:description" content="Totc is one of the famous E-learning website platform for buying and learning coarses online">
+    <meta property="og:url" content="https://im-nantha.github.io/totc-website/">
+    <meta property="og:image" content="./assets/enroll-left.png">
+    <meta name="author" content="nanthakumar">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="./assets/totc-logo.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://im-nantha.github.io/totc-website/" />
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- jquery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -14,11 +27,11 @@
         </div>
         <nav class="totc-navbar">
           <ul class="totc-nav-list d-flex">
-            <li class="totc-nav-link">Home</li>
-            <li class="totc-nav-link">Coarses</li>
-            <li class="totc-nav-link">Careers</li>
-            <li class="totc-nav-link">Blog</li>
-            <li class="totc-nav-link">About Us</li>
+            <li><a class="totc-nav-link" href="#">Home</a></li>
+            <li><a class="totc-nav-link" href="#">Coarses</a></li>
+            <li><a class="totc-nav-link" href="#">Careers</a></li>
+            <li><a class="totc-nav-link" href="#">Blog</a></li>
+            <li><a class="totc-nav-link" href="#">About Us</a></li>
           </ul>
         </nav>
         <div class="totc-nav-buttons d-flex">
@@ -43,7 +56,7 @@
             </div>
           </div>
           <div class="totc-banner__cover">
-            <img class="img-fluid totc-banner-img" src="./assets/banner.png" alt="image">
+            <img class="img-fluid totc-banner-img" src="./assets/hero-banner.png" alt="image">
           </div>
         </div>
       </section>
@@ -125,17 +138,17 @@
           <div class="totc-enroll__box" style="background-image: url(./assets/enroll-left.png);">
             <div class="totc-overlay"></div>
             <h4 class="pure-white">FOR INSTRUCTORS</h4>
-            <button>Start a class today</button>
+            <button class="totc-enroll-btn">Start a class today</button>
           </div>
           <div class="totc-enroll__box" style="background-image: url(./assets/enroll-right.png);">
             <div class="totc-overlay"></div>
             <h4 class="pure-white">FOR STUDENTS</h4>
-            <button>Enter access code</button>
+            <button class="totc-enroll-btn">Enter access code</button>
           </div>
         </div>
       </section>
       <section class="totc-layout">
-        <div class="totc-layout__container">
+        <div class="totc-layout__container mt-5">
           <div class="totc-layout-row">
             <div class="totc-layout-col">
               <h3>Everything you can do in a physical classroom, you can do with TOTC</h3>
@@ -248,7 +261,386 @@
           </div>
         </div>
       </section>
+
+      <section class="totc-word-text-container px-5 py-0">
+        <div class="totc-text-wrapper py-5 text-center">
+          <h2 class="pb-4 heading-blue">Our <span class="heading-green">Coarses</span></h2>
+          <p>These are very extraordinary coarses, can make learning activities more efficient</p>
+        </div>
+      </section>
+      
+      <section class="totc-pagination">
+        <div id="cards-container" class="totc-page-cards-container">
+          <!-- 30 cards go here -->
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-2.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-3.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-4.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-5.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-6.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-4.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-3.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-2.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-4.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-6.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-2.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-5.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-3.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-4.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-2.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-4.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-6.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-2.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-1.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          <div class="page-cards">
+            <div class="pagination-img-wrapper px-3 py-3">
+              <img class="page-books" src="./assets/books/book-3.png" alt="books">
+            </div>
+            <div class="pagination-text-wrapper d-flex justify-content-between px-3 pb-4">
+              <p class="book-name">All Benefits of PLUS</p>
+              <p class="book-price">$24</p>
+            </div>
+          </div>
+          
+        </div>
+        <div id="pagination">
+            <button id="prev">Prev</button>
+            <span class="page-number" data-page="1">1</span>
+            <span class="page-number" data-page="2">2</span>
+            <span class="page-number" data-page="3">3</span>
+            <span class="page-number" data-page="4">4</span>
+            <span class="page-number" data-page="5">5</span>
+            <button id="next">Next</button>
+        </div>
+      </section>
+      <section class="totc-word-text-container px-5 py-0">
+        <div class="totc-text-wrapper py-5 text-center">
+          <h2 class="pb-4 heading-blue">Lastest News<span class="heading-green"> and Resources</span></h2>
+          <p>See the developments that have occurred to TOTC in the world</p>
+        </div>
+      </section>
+
+      <section class="totc-news-container d-flex px-5 py-4 justify-content-between">
+        <div class="totc-news-frames">
+          <div class="totc-news-frame-wrapper">
+            <img class="mw-100" src="./assets/news/news-01.png" alt="big-image">
+            <div class="news-color-text-cover position-static my-4">
+              <p>NEWS</p>
+            </div>
+            <h4 class="pb-3">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h4>
+            <p class="pb-3">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+            <a href="#" class="totc-news-subtitle pure-black">Read more</a>
+          </div>
+        </div>
+        <div class="totc-news-frames">
+          <div class="totc-news-frame-wrapper d-flex pb-4">
+            <div class="totc-news-frame-left">
+              <img src="./assets/news/news-02.png" alt="big-image">
+              <div class="news-color-text-cover">
+                <p>PRESS RELEASE</p>
+              </div>
+            </div>
+            <div class="totc-news-frame-right">
+              <p class="pb-3">Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand</p>
+              <p class="totc-news-subtitle">Class Technologies Inc., the company that created Class,...</p>
+            </div>
+          </div>
+          <div class="totc-news-frame-wrapper d-flex pb-4">
+            <div class="totc-news-frame-left">
+              <img src="./assets/news/news-03.png" alt="big-image">
+              <div class="news-color-text-cover">
+                <p>BLOGS</p>
+              </div>
+            </div>
+            <div class="totc-news-frame-right">
+              <p class="pb-3">Zoom’s earliest investors are betting millions on a better Zoom for schools</p>
+              <p class="totc-news-subtitle">Zoom was never created to be a consumer product. Nonetheless, the...</p>
+            </div>
+          </div>
+          <div class="totc-news-frame-wrapper d-flex pb-4">
+            <div class="totc-news-frame-left">
+              <img src="./assets/news/news-04.png" alt="big-image">
+              <div class="news-color-text-cover">
+                <p>MEDIA</p>
+              </div>
+            </div>
+            <div class="totc-news-frame-right">
+              <p class="pb-3">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</p>
+              <p class="totc-news-subtitle">This year, investors have reaped big financial returns from betting on Zoom...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
+
+    <footer class="footer px-5 py-5">
+      <section class="totc-footer">
+        <div class="footer-start d-flex justify-content-center align-items-center pb-4">
+          <div class="footer-logo-wrapper text-center">
+            <img src="./assets/totc-logo.png" alt="footer-logo">
+          </div>
+          <div class="break-line"></div>
+          <p>Virtual Class<br>for Zoom</p>
+        </div>
+        <div class="footer-form">
+          <h4 class="opacity-6">Subscribe to get our Newsletter</h4>
+          <div class="totc-subscribe-form">
+            <input type="email" name="" id="" placeholder="Your Email" class="totc-subscribe-label">
+            <button  class="totc-subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-end opacity-6">
+          <ul class="totc-footer-links d-flex align-items-center justify-content-center pt-4 pb-3">
+            <li><a href="#" class="footer-nav-links">Careers</a></li>
+            <li><a href="#" class="footer-nav-links">Privacy Policy</a></li>
+            <li><a href="#" class="footer-nav-links">Terms & Conditions</a></li>
+          </ul>
+          <h5>© 2021 Class Technologies Inc.</h5>
+        </div>
+      </section>
+    </footer>
 
     <script src="./js/script.js"></script>
   </body>
