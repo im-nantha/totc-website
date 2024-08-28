@@ -25,6 +25,9 @@
         <div class="totc-logo-wrapper">
           <img class="totc-logo-image" src="./assets/totc-logo.png" alt="image">
         </div>
+        <!-- Hamburger Menu Button -->
+        <button class="totc-hamburger" id="hamburgerButton">&#9776;</button>
+
         <nav class="totc-navbar">
           <ul class="totc-nav-list d-flex">
             <li><a class="totc-nav-link" href="#">Home</a></li>
@@ -49,7 +52,7 @@
           <div class="popup-form">
             <span class="totc-close-btn">&times;</span>
             <h2>Login</h2>
-            <form id="totc-loginform" class="pr-5 py-5">
+            <form id="totc-loginform" class="pr-0 pr-md-5 py-0 py-md-5">
               <label for="username">Username:</label><br>
               <input type="text" id="username" placeholder="Enter your User name" class="my-3 w-100 px-3 py-3 login-input" required><br>
               <label for="password">Password:</label><br>
@@ -79,8 +82,8 @@
           </div>
           <div class="popup-form">
             <span class="totc-close-btn">&times;</span>
-            <h2>Login</h2>
-            <form id="totc-registerform" class="pr-5 py-5">
+            <h2>Sign up</h2>
+            <form id="totc-registerform" class="pr-0 pr-md-5 py-0 py-md-5">
               <label for="username">Username:</label><br>
               <input type="text" id="register-username" placeholder="Enter your User name" class="my-3 w-100 px-3 py-3 login-input" required><br>
               <label for="password">Password:</label><br>
@@ -124,12 +127,12 @@
         </div>
       </section>
       <section class="totc-word-text-container px-3 px-md-5 py-0">
-        <div class="totc-text-wrapper px-5 py-5 text-center">
+        <div class="totc-text-wrapper px-0 px-md-5 py-5 text-center">
           <h2 class="pb-4 heading-blue">Our <span class="heading-green">Success</span></h2>
           <p>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p>
         </div>
       </section>
-      <section class="totc-exp-wrapper px-3 px-md-5 py-5">
+      <section class="totc-exp-wrapper px-3 px-md-5 py-2 py-md-5">
         <div class="totc-exp-wrapper__cover d-flex justify-content-between text-center px-0 px-lg-5">
           <div class="totc-exp-content">
             <p class="totc-exp-num">15K+</p>
@@ -160,7 +163,7 @@
         </div>
       </section>
       <section class="totc-schedule px-3 px-md-5 py-5">
-        <div class="totc-schedule__container d-flex px-3 px-md-5 py-4">
+        <div class="totc-schedule__container d-flex px-0 px-md-5 py-4">
           <div class="totc-schedule-content px-4">
             <div class="schedule-img-cover">
               <img class="schedule-icon"  src="./assets/file-icon.png" alt="icon">
@@ -266,7 +269,7 @@
       </section>
       <section class="totc-layout">
         <div class="totc-layout__container">
-          <div class="totc-layout-row">
+          <div class="totc-layout-row flex-column-reverse-mobile">
             <div class="totc-layout-col">
               <h3>Tools For Teachers And Learners</h3>
               <p>Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.</p>
@@ -296,7 +299,7 @@
       </section>
       <section class="totc-layout">
         <div class="totc-layout__container">
-          <div class="totc-layout-row">
+          <div class="totc-layout-row flex-column-reverse-mobile">
             <div class="totc-layout-col">
               <h3>Class Management Tools for Educators</h3>
               <p>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
@@ -626,7 +629,7 @@
       <section class="totc-news-container d-flex px-3 px-md-5 py-4 justify-content-between">
         <div class="totc-news-frames">
           <div class="totc-news-frame-wrapper">
-            <img class="mw-100" src="./assets/news/news-01.png" alt="big-image">
+            <img class="w-100" src="./assets/news/news-01.png" alt="big-image">
             <div class="news-color-text-cover position-static my-4">
               <p>NEWS</p>
             </div>
@@ -638,7 +641,7 @@
         <div class="totc-news-frames">
           <div class="totc-news-frame-wrapper d-flex pb-4">
             <div class="totc-news-frame-left">
-              <img src="./assets/news/news-02.png" alt="big-image">
+              <img class="totc-news-frame-img" src="./assets/news/news-02.png" alt="big-image">
               <div class="news-color-text-cover">
                 <p>PRESS RELEASE</p>
               </div>
@@ -650,7 +653,7 @@
           </div>
           <div class="totc-news-frame-wrapper d-flex pb-4">
             <div class="totc-news-frame-left">
-              <img src="./assets/news/news-03.png" alt="big-image">
+              <img class="totc-news-frame-img" src="./assets/news/news-03.png" alt="big-image">
               <div class="news-color-text-cover">
                 <p>BLOGS</p>
               </div>
@@ -662,7 +665,7 @@
           </div>
           <div class="totc-news-frame-wrapper d-flex pb-4">
             <div class="totc-news-frame-left">
-              <img src="./assets/news/news-04.png" alt="big-image">
+              <img class="totc-news-frame-img" src="./assets/news/news-04.png" alt="big-image">
               <div class="news-color-text-cover">
                 <p>MEDIA</p>
               </div>

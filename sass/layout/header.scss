@@ -4,8 +4,12 @@
   padding: 1rem 0rem;
 
   .totc-logo-wrapper {
-    width: 114px;
-    height: 83px;
+    width: rem(114);
+    height: rem(83);
+    @media(max-width: rem(768)){
+      width: rem(70);
+      height: rem(50);
+    }
     .totc-logo-image {
       width: 100%;
       height: 100%;
@@ -21,6 +25,9 @@
   }
   .totc-nav-buttons{
     gap: 1rem;
+    @media (max-width: rem(768)){
+      padding-right: rem(45);
+    }
     .btn-login, .btn-signup{
       padding: rem(12) rem(45);
       border: none;
@@ -37,6 +44,53 @@
     .btn-signup{
       background-color: var(--primary-light-green);
       color: var(--pure-white);
+    }
+  }
+
+  .totc-hamburger {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .totc-navbar {
+      display: none; /* Hide the navigation menu by default */
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--heading-blue);
+      color: var(--pure-black);
+      z-index: 10;
+    }
+
+    .totc-nav-list {
+      flex-direction: column;
+      width: 100%;
+      padding: rem(30);
+      height: 100vh;
+    }
+  
+    .totc-hamburger {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      right: 3%;
+      color: var(--pure-white);
+    }
+  
+    .totc-navbar.active {
+      display: flex;
+    }
+
+    .totc-hamburger.close {
+      content: "\00d7"; /* Unicode for '×' symbol */
+      font-size: 30px;
+      font-weight: bold;
     }
   }
 }

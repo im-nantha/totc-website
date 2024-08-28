@@ -32,6 +32,10 @@ $tick-icon-color: green;
     .popup-image {
       flex: 1;
       height: 100%;
+
+      @media (max-width: rem(768)){
+        display: none;
+      }
       .login-popup-img {
         height: 100%;
         border-radius: 8px 0 0 8px; // Rounded corners for the image

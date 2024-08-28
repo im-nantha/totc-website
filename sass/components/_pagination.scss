@@ -7,21 +7,40 @@
     justify-items: center;
     margin-bottom: 20px;
 
+    @media (max-width:rem(768)){
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media (max-width:rem(576)){
+        grid-template-columns: repeat(1,1fr);
+    }
+
     .page-cards {
         width: rem(320);
         background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        @media (max-width: rem(1100)){
+            width: rem(250);
+        }
         @media (max-width: rem(992)){
             width: rem(200);
+        }
+        @media (max-width: rem(992)){
+            width: 100%;
         }
     }
 
     .pagination-img-wrapper{
         width: rem(320);
+        @media (max-width: rem(1100)){
+            width: rem(250);
+        }
         @media (max-width: rem(992)){
             width: rem(200);
+        }
+        @media (max-width: rem(992)){
+            width: 100%;
         }
         .page-books{
             width: 100%;

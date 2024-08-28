@@ -16,6 +16,9 @@
       object-position: bottom;
       border-radius: rem(6);
     }
+    @media (max-width:rem(768)){
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -24,6 +27,9 @@
     .totc-banner-content {
       flex: 1;
       max-width: 50%;
+      @media (max-width:rem(768)){
+        max-width: 100%;
+      }
 
       .totc-banner-subtitle {
         color: var(--pure-white);
@@ -31,6 +37,9 @@
 
       .totc-banner-button-wrapper {
         gap: rem(30);
+        @media (max-width:rem(768)){
+          gap: rem(10);
+        }
 
         .btn-join {
           padding: rem(20) rem(40);
@@ -47,6 +56,10 @@
         .totc-banner__play-icon {
           max-width: rem(60);
           max-height: rem(60);
+
+          @media(max-width: rem(768)){
+            display: none;
+          }
 
           .play-icon-img {
             width: rem(60);

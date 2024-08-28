@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+    function hamburger(){
+        const $hamburgerButton = $('#hamburgerButton');
+        const $navbar = $('.header .totc-navbar');
+        $hamburgerButton.on('click', function() {
+            $navbar.toggleClass('active');
+            
+            // Toggle between hamburger and close icons
+            if ($navbar.hasClass('active')) {
+                $hamburgerButton.addClass('close').html('&times;'); // Close icon (×)
+            } else {
+                $hamburgerButton.removeClass('close').html('&#9776;'); // Hamburger icon (≡)
+            }
+        });
+    }
+
     function paginationGallery(){
         let currentPage = 1;
         const cardsPerPage = 6;
@@ -181,6 +196,7 @@ $(document).ready(function() {
     }
 
     // Calling functions
+    hamburger();
     paginationGallery();
     login();  
     signup();

@@ -24,6 +24,12 @@
   flex-direction: column-reverse !important;
 }
 
+@media (max-width:rem(768)){
+  .flex-column-reverse-mobile {
+    flex-direction: column-reverse !important;
+  }
+}
+
 // Flex Wrap
 .flex-wrap {
   flex-wrap: wrap !important;

@@ -3,7 +3,9 @@
 
     &__cover {
         flex-wrap: nowrap;
-
+        @media (max-width: rem(768)){
+            flex-direction: column;
+        }
         .totc-exp-num {
             font-size: rem(70);
             font-weight: normal;
@@ -32,6 +34,9 @@
     &__container {
         justify-content: space-between;
         gap: rem(24);
+        @media (max-width: rem(992)){
+            flex-direction: column;
+        }
         .totc-schedule-content {
             box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
             border-radius: rem(20);
@@ -57,6 +62,10 @@
     &__wrapper{
         @include center;
         gap: rem(40);
+
+        @media (max-width:rem(768)){
+            flex-direction: column;
+        }
     }
     &__box{
         @include center;
@@ -105,12 +114,21 @@
     width: 100%;
     &__container{
         padding: rem(48);
+        @media (max-width:rem(768)){
+            padding: rem(0) rem(16);
+        }
         .totc-layout-row{
             @include center;
             align-items: center;
             gap: rem(20);
+            @media (max-width: rem(768)){
+                flex-direction: column;
+            }
             .totc-layout-col{
                 width: 50%;
+                @media (max-width: rem(768)){
+                    width: 100%;
+                }
             }
             .totc-content-box{
                 padding-top: rem(25);
@@ -124,19 +142,34 @@
 .totc-news-container{
     @media (max-width: rem(992)){
         flex-direction: column;
+        gap: rem(25);
     }
     .totc-news-frames:first-child{
         width: 45%;
+        @media (max-width: rem(992)){
+            width: 100%;
+        }
     }
     .totc-news-frames:last-child{
         width: 50%;
+        @media (max-width: rem(992)){
+            width: 100%;
+        }
     }
     .totc-news-frame-wrapper{
         gap: rem(20);
+        @media (max-width: rem(768)){
+            flex-direction: column;
+        }
     }
     .totc-news-frame-wrapper{
         .totc-news-frame-left{
             position: relative;
+            .totc-news-frame-img{
+                @media (max-width: rem(768)){
+                    width: 100%;
+                }
+            }
         }
         .news-color-text-cover{
             padding: rem(2) rem(30);

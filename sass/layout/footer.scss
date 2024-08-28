@@ -18,12 +18,19 @@
             padding: rem(20) rem(0);
             display: inline-flex;
             gap: rem(20);
+            @media (max-width: rem(768)){
+                flex-direction: column;
+            }
             .totc-subscribe-label{
                 padding: rem(8) rem(30);
                 color: var(--pure-white);
                 border-radius: 1rem;
                 border: 1px solid #83839a;
                 background-color: transparent;
+
+                @media (max-width:rem(768)){
+                    text-align: center;
+                }
             }
             .totc-subscribe-btn{
                 padding: rem(8) rem(30);
@@ -40,6 +47,9 @@
         .totc-footer-links{
             list-style: none;
             gap: rem(20);
+            @media (max-width: rem(768)){
+                flex-direction: column;
+            }
             .footer-nav-links{
                 color: var(--pure-white);
                 text-decoration: none;
