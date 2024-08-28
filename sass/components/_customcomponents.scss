@@ -11,11 +11,17 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            @media (max-width: rem(992)){
+                font-size: rem(30);
+            }
         }
 
         .totc-exp-val {
             font-size: rem(24);
             line-height: 160%;
+            @media (max-width: rem(992)){
+                font-size: rem(16);
+            }
         }
     }
 }
@@ -62,6 +68,10 @@
         background-size: cover;
         border-radius: rem(20);
         position: relative;
+        @media (max-width: rem(992)){
+            min-width: rem(300);
+            min-height: rem(200);
+        }
         .totc-overlay{
             position: absolute;
             inset: 0;
@@ -69,6 +79,10 @@
             width: rem(420);
             height: rem(270);
             background-color: rgba(0, 0, 0, 0.1);
+            @media (max-width: rem(992)){
+                width: rem(300);
+                height: rem(200);
+            }
         }
         .totc-enroll-btn{
             position: relative;
@@ -80,6 +94,9 @@
             background-color: transparent;
             color: var(--pure-white);
             cursor: pointer;
+            @media (max-width: rem(992)){
+                padding: rem(14) rem(19);
+            }
         }
     }
 }
@@ -105,6 +122,9 @@
 }
 
 .totc-news-container{
+    @media (max-width: rem(992)){
+        flex-direction: column;
+    }
     .totc-news-frames:first-child{
         width: 45%;
     }

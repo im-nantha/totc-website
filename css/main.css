@@ -48,6 +48,10 @@ body {
   height: 100%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -108,7 +112,7 @@ h1 {
   font-size: 3.375rem;
   font-weight: bold;
 }
-@media (max-width: 48rem) {
+@media (max-width: 62rem) {
   h1 {
     font-size: 2rem;
   }
@@ -118,7 +122,7 @@ h2 {
   font-size: 2.25rem;
   font-weight: bold;
 }
-@media (max-width: 48rem) {
+@media (max-width: 62rem) {
   h2 {
     font-size: 1.5rem;
   }
@@ -128,7 +132,7 @@ h3 {
   font-size: 1.625rem;
   font-weight: 500;
 }
-@media (max-width: 48rem) {
+@media (max-width: 62rem) {
   h3 {
     font-size: 1.375rem;
   }
@@ -138,7 +142,7 @@ h4 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-@media (max-width: 48rem) {
+@media (max-width: 62rem) {
   h4 {
     font-size: 1.25rem;
   }
@@ -149,7 +153,7 @@ p {
   font-style: normal;
   line-height: 160%;
 }
-@media (max-width: 48rem) {
+@media (max-width: 62rem) {
   p {
     font-size: 1rem;
   }
@@ -180,9 +184,15 @@ p {
   gap: 1rem;
 }
 .header .totc-nav-buttons .btn-login, .header .totc-nav-buttons .btn-signup {
+  padding: 0.75rem 2.8125rem;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+@media (max-width: 62rem) {
+  .header .totc-nav-buttons .btn-login, .header .totc-nav-buttons .btn-signup {
+    padding: 0.625rem 1.25rem;
+  }
 }
 .header .totc-nav-buttons .btn-login {
   background-color: var(--pure-white);
@@ -2301,8 +2311,8 @@ p {
   max-width: 50%;
 }
 .totc-banner__cover .totc-banner-img {
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: bottom;
   border-radius: 0.375rem;
 }
 .totc-banner__wrapper {
@@ -2326,6 +2336,11 @@ p {
   background-color: var(--primary-light-green);
   color: var(--pure-white);
 }
+@media (max-width: 62rem) {
+  .totc-banner__wrapper .totc-banner-content .totc-banner-button-wrapper .btn-join {
+    padding: 0.625rem 1.25rem;
+  }
+}
 .totc-banner__wrapper .totc-banner-content .totc-banner-button-wrapper .totc-banner__play-icon {
   max-width: 3.75rem;
   max-height: 3.75rem;
@@ -2338,6 +2353,11 @@ p {
 .totc-word-text-container .totc-text-wrapper {
   max-width: 70%;
   margin: 0 auto;
+}
+@media (max-width: 62rem) {
+  .totc-word-text-container .totc-text-wrapper {
+    max-width: 90%;
+  }
 }
 @media (max-width: 48rem) {
   .totc-word-text-container .totc-text-wrapper {
@@ -2360,9 +2380,19 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 62rem) {
+  .totc-exp-wrapper__cover .totc-exp-num {
+    font-size: 1.875rem;
+  }
+}
 .totc-exp-wrapper__cover .totc-exp-val {
   font-size: 1.5rem;
   line-height: 160%;
+}
+@media (max-width: 62rem) {
+  .totc-exp-wrapper__cover .totc-exp-val {
+    font-size: 1rem;
+  }
 }
 
 .totc-schedule {
@@ -2410,6 +2440,12 @@ p {
   border-radius: 1.25rem;
   position: relative;
 }
+@media (max-width: 62rem) {
+  .totc-enroll__box {
+    min-width: 18.75rem;
+    min-height: 12.5rem;
+  }
+}
 .totc-enroll__box .totc-overlay {
   position: absolute;
   inset: 0;
@@ -2417,6 +2453,12 @@ p {
   width: 26.25rem;
   height: 16.875rem;
   background-color: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 62rem) {
+  .totc-enroll__box .totc-overlay {
+    width: 18.75rem;
+    height: 12.5rem;
+  }
 }
 .totc-enroll__box .totc-enroll-btn {
   position: relative;
@@ -2428,6 +2470,11 @@ p {
   background-color: transparent;
   color: var(--pure-white);
   cursor: pointer;
+}
+@media (max-width: 62rem) {
+  .totc-enroll__box .totc-enroll-btn {
+    padding: 0.875rem 1.1875rem;
+  }
 }
 
 .totc-layout {
@@ -2452,6 +2499,11 @@ p {
   gap: 1.25rem;
 }
 
+@media (max-width: 62rem) {
+  .totc-news-container {
+    flex-direction: column;
+  }
+}
 .totc-news-container .totc-news-frames:first-child {
   width: 45%;
 }
@@ -2484,21 +2536,31 @@ p {
 #page-cards-container {
   font-family: Arial, sans-serif;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  justify-content: center;
+  justify-items: center;
   margin-bottom: 20px;
 }
 #page-cards-container .page-cards {
-  width: 400px;
+  width: 20rem;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 62rem) {
+  #page-cards-container .page-cards {
+    width: 12.5rem;
+  }
+}
 #page-cards-container .pagination-img-wrapper {
-  width: 400px;
+  width: 20rem;
+}
+@media (max-width: 62rem) {
+  #page-cards-container .pagination-img-wrapper {
+    width: 12.5rem;
+  }
 }
 #page-cards-container .pagination-img-wrapper .page-books {
   width: 100%;
@@ -2529,6 +2591,83 @@ p {
 }
 #pagination button:hover, #pagination .page-number:hover {
   background-color: #e0e0e0;
+}
+
+.totc-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.totc-popup .totc-popup-content {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--pure-white);
+  color: var(--pure-black);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  margin: 40px auto;
+  z-index: 1010;
+  width: 75%;
+}
+.totc-popup .totc-popup-content .popup-image {
+  flex: 1;
+  height: 100%;
+}
+.totc-popup .totc-popup-content .popup-image .login-popup-img {
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+.totc-popup .totc-popup-content .popup-form {
+  flex: 1;
+  padding: 20px;
+}
+.totc-popup .totc-popup-content .popup-form .totc-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.totc-popup .totc-popup-content .popup-form .login-input {
+  border: 1px solid var(--primary-green);
+  border-radius: 1.875rem;
+}
+.totc-popup .totc-popup-content .popup-form .popup-btn {
+  padding: 0.75rem 2.8125rem;
+  border: none;
+  background-color: var(--primary-green);
+  color: var(--pure-white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 1.25rem;
+}
+@media (max-width: 62rem) {
+  .totc-popup .totc-popup-content .popup-form .popup-btn {
+    padding: 0.625rem 1.25rem;
+  }
+}
+.totc-popup .totc-popup-content .popup-form .password-container {
+  position: relative;
+}
+.totc-popup .totc-popup-content .popup-form .password-container .toggle-password {
+  cursor: pointer;
+  color: var(--heading-blue);
+}
+.totc-popup .totc-popup-content .popup-form .hidden {
+  display: none;
+}
+.totc-popup .totc-popup-content .popup-form .totc-tick-icon {
+  font-size: 30px;
+  color: green;
 }
 
 /*# sourceMappingURL=main.css.map */

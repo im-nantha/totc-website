@@ -2,6 +2,9 @@
     .totc-text-wrapper {
         max-width: 70%;
         margin: 0 auto;
+        @media (max-width: rem(992)){
+            max-width: 90%;
+          }
         @media (max-width: rem(768)) {
             max-width: 100%;
             margin: 0;

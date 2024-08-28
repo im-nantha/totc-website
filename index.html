@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="totc-header d-flex justify-content-between px-5 align-items-center">
+      <div class="totc-header d-flex justify-content-between px-3 px-md-5 align-items-center">
         <div class="totc-logo-wrapper">
           <img class="totc-logo-image" src="./assets/totc-logo.png" alt="image">
         </div>
@@ -35,14 +35,77 @@
           </ul>
         </nav>
         <div class="totc-nav-buttons d-flex">
-          <button class="px-5 py-3 btn-login">Login</button>
-          <button class="px-5 py-3 btn-signup">Sign Up</button>
+          <button class="btn-login" id="openLoginPopupBtn">Login</button>
+          <button class="btn-signup" id="openRegisterPopupBtn">Sign Up</button>
         </div>
       </div>
+      <!-- Login Popup -->
+      <div id="totc-loginpopup" class="totc-popup">
+        <div class="totc-popup-content d-flex">
+          <div class="popup-image">
+            <!-- Placeholder for the image -->
+            <img src="./assets/login-form-image.png" alt="Login Image" class="login-popup-img mw-100">
+          </div>
+          <div class="popup-form">
+            <span class="totc-close-btn">&times;</span>
+            <h2>Login</h2>
+            <form id="totc-loginform" class="pr-5 py-5">
+              <label for="username">Username:</label><br>
+              <input type="text" id="username" placeholder="Enter your User name" class="my-3 w-100 px-3 py-3 login-input" required><br>
+              <label for="password">Password:</label><br>
+              <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your Password" class="my-3 w-100 px-3 py-3 login-input" required>
+                <span class="toggle-password" id="togglePassword">Show</span>
+              </div>
+              <br>
+              <!-- Error message for invalid credentials -->
+              <p id="errorMessage" class="hidden" style="color: red;">Username and password didn't match</p>
+
+              <button class="popup-btn" type="button" id="loginBtn">Login</button>
+            </form>
+            <div id="successMessage" class="hidden">
+              <span class="totc-tick-icon">&#10004;</span> <!-- Tick icon -->
+              <p>Login successful!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Register Popup -->
+      <div id="totc-registerpopup" class="totc-popup">
+        <div class="totc-popup-content d-flex">
+          <div class="popup-image">
+            <!-- Placeholder for the image -->
+            <img src="./assets/register-form-image.png" alt="Login Image" class="login-popup-img mw-100">
+          </div>
+          <div class="popup-form">
+            <span class="totc-close-btn">&times;</span>
+            <h2>Login</h2>
+            <form id="totc-registerform" class="pr-5 py-5">
+              <label for="username">Username:</label><br>
+              <input type="text" id="register-username" placeholder="Enter your User name" class="my-3 w-100 px-3 py-3 login-input" required><br>
+              <label for="password">Password:</label><br>
+              <div class="password-container">
+                <input type="password" id="register-password" placeholder="Enter your Password" class="my-3 w-100 px-3 py-3 login-input" required>
+                <span class="toggle-password" id="register-togglePassword">Show</span>
+              </div>
+              <br>
+              <!-- Error message for invalid credentials -->
+              <p id="register-errorMessage" class="hidden" style="color: red;">Username and password didn't match</p>
+
+              <button class="popup-btn" type="button" id="registerBtn">Login</button>
+            </form>
+            <div id="register-successMessage" class="hidden">
+              <span class="totc-tick-icon">&#10004;</span> <!-- Tick icon -->
+              <p>Login successful!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
     <main>
-      <section class="totc-banner px-5">
+      <section class="totc-banner px-3 px-md-5">
         <div class="totc-banner__wrapper d-flex">
           <div class="totc-banner-content">
             <h1 class="pb-3"><span class="heading-blue">Studying</span> Online is now much easier</h1>
@@ -60,14 +123,14 @@
           </div>
         </div>
       </section>
-      <section class="totc-word-text-container px-5 py-0">
+      <section class="totc-word-text-container px-3 px-md-5 py-0">
         <div class="totc-text-wrapper px-5 py-5 text-center">
           <h2 class="pb-4 heading-blue">Our <span class="heading-green">Success</span></h2>
           <p>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p>
         </div>
       </section>
-      <section class="totc-exp-wrapper px-5 py-5">
-        <div class="totc-exp-wrapper__cover d-flex align-items-center justify-content-between text-center px-5">
+      <section class="totc-exp-wrapper px-3 px-md-5 py-5">
+        <div class="totc-exp-wrapper__cover d-flex justify-content-between text-center px-0 px-lg-5">
           <div class="totc-exp-content">
             <p class="totc-exp-num">15K+</p>
             <p class="totc-exp-val">Students</p>
@@ -90,14 +153,14 @@
           </div>
         </div>
       </section>
-      <section class="totc-word-text-container px-5 py-0">
+      <section class="totc-word-text-container px-3 px-md-5 py-0">
         <div class="totc-text-wrapper py-5 text-center">
           <h2 class="pb-4 heading-blue">All-In-One <span class="heading-green">Cloud Software.</span></h2>
           <p>TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
         </div>
       </section>
-      <section class="totc-schedule px-5 py-5">
-        <div class="totc-schedule__container d-flex px-5 py-4">
+      <section class="totc-schedule px-3 px-md-5 py-5">
+        <div class="totc-schedule__container d-flex px-3 px-md-5 py-4">
           <div class="totc-schedule-content px-4">
             <div class="schedule-img-cover">
               <img class="schedule-icon"  src="./assets/file-icon.png" alt="icon">
@@ -127,7 +190,7 @@
           </div>
         </div>
       </section>
-      <section class="totc-word-text-container px-5 py-0">
+      <section class="totc-word-text-container px-3 px-md-5 py-0">
         <div class="totc-text-wrapper py-5 text-center">
           <h2 class="pb-4 heading-blue">What is <span class="heading-green">TOTC?</span></h2>
           <p>TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
@@ -163,7 +226,7 @@
           </div>
         </div>
       </section>
-      <section class="totc-word-text-container px-5 py-0">
+      <section class="totc-word-text-container px-3 px-md-5 py-0">
         <div class="totc-text-wrapper py-5 text-center">
           <h2 class="pb-4 heading-blue">Our <span class="heading-green">Features</span></h2>
           <p>This very extraordinary feature, can make learning activities more efficient</p>
@@ -553,14 +616,14 @@
             <button id="next">Next</button>
         </div>
       </section>
-      <section class="totc-word-text-container px-5 py-0">
+      <section class="totc-word-text-container px-3 px-md-5 py-0">
         <div class="totc-text-wrapper py-5 text-center">
           <h2 class="pb-4 heading-blue">Lastest News<span class="heading-green"> and Resources</span></h2>
           <p>See the developments that have occurred to TOTC in the world</p>
         </div>
       </section>
 
-      <section class="totc-news-container d-flex px-5 py-4 justify-content-between">
+      <section class="totc-news-container d-flex px-3 px-md-5 py-4 justify-content-between">
         <div class="totc-news-frames">
           <div class="totc-news-frame-wrapper">
             <img class="mw-100" src="./assets/news/news-01.png" alt="big-image">
@@ -614,7 +677,7 @@
 
     </main>
 
-    <footer class="footer px-5 py-5">
+    <footer class="footer px-3 px-md-5 py-5">
       <section class="totc-footer">
         <div class="footer-start d-flex justify-content-center align-items-center pb-4">
           <div class="footer-logo-wrapper text-center">

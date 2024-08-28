@@ -1,22 +1,28 @@
 #page-cards-container {
     font-family: Arial, sans-serif;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: rem(40);
-    justify-content: center;
+    justify-items: center;
     margin-bottom: 20px;
 
     .page-cards {
-        width: 400px;
+        width: rem(320);
         background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        @media (max-width: rem(992)){
+            width: rem(200);
+        }
     }
 
     .pagination-img-wrapper{
-        width: 400px;
+        width: rem(320);
+        @media (max-width: rem(992)){
+            width: rem(200);
+        }
         .page-books{
             width: 100%;
         }

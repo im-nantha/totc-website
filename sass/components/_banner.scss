@@ -12,8 +12,8 @@
     flex: 1;
     max-width: 50%;
     .totc-banner-img{
-      object-fit: cover;
-      object-position: top;
+      object-fit: contain;
+      object-position: bottom;
       border-radius: rem(6);
     }
   }
@@ -39,6 +39,9 @@
           cursor: pointer;
           background-color: var(--primary-light-green);
           color: var(--pure-white);
+          @media (max-width: rem(992)){
+            padding: rem(10) rem(20);
+          }
         }
 
         .totc-banner__play-icon {

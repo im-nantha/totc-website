@@ -1,0 +1,89 @@
+$popup-background-color: rgba(0, 0, 0, 0.5);
+$popup-content-background: white;
+$close-btn-font-size: 18px;
+$password-toggle-color: #007BFF;
+$tick-icon-color: green;
+
+.totc-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $popup-background-color;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // Ensure the popup is on top of all content
+
+  .totc-popup-content {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--pure-white);
+    color: var(--pure-black);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    margin: 40px auto;
+    z-index: 1010;
+    width: 75%;
+
+    .popup-image {
+      flex: 1;
+      height: 100%;
+      .login-popup-img {
+        height: 100%;
+        border-radius: 8px 0 0 8px; // Rounded corners for the image
+      }
+    }
+
+    .popup-form {
+      flex: 1;
+      padding: 20px;
+
+      .totc-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: rem(40);
+        cursor: pointer;
+      }
+      .login-input{
+        border: 1px solid var(--primary-green);
+        border-radius: rem(30);
+      }
+
+      .popup-btn{
+        padding: rem(12) rem(45);
+        border: none;
+        background-color: var(--primary-green);
+        color: var(--pure-white);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        border-radius: rem(20);
+        @media (max-width: rem(992)){
+          padding: rem(10) rem(20);
+        }
+      }
+
+      .password-container {
+        position: relative;
+
+        .toggle-password {
+          cursor: pointer;
+          color: var(--heading-blue);
+        }
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .totc-tick-icon {
+        font-size: 30px;
+        color: $tick-icon-color;
+      }
+    }
+  }
+}

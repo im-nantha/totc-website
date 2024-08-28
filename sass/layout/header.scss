@@ -22,9 +22,13 @@
   .totc-nav-buttons{
     gap: 1rem;
     .btn-login, .btn-signup{
+      padding: rem(12) rem(45);
       border: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       cursor: pointer;
+      @media (max-width: rem(992)){
+        padding: rem(10) rem(20);
+      }
     }
     .btn-login{
       background-color: var(--pure-white);
