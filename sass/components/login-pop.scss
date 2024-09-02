@@ -46,6 +46,10 @@ $tick-icon-color: green;
       flex: 1;
       padding: 20px;
 
+      @media (max-width: rem(768)){
+        padding: 0;
+      }
+
       .totc-close-btn {
         position: absolute;
         top: 10px;

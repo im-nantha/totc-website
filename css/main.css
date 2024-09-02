@@ -2810,6 +2810,11 @@ p {
   flex: 1;
   padding: 20px;
 }
+@media (max-width: 48rem) {
+  .totc-popup .totc-popup-content .popup-form {
+    padding: 0;
+  }
+}
 .totc-popup .totc-popup-content .popup-form .totc-close-btn {
   position: absolute;
   top: 10px;
